@@ -1,4 +1,4 @@
-package com.example.jacobsecor.myapplication;
+package com.example.jacobsecor.CameraStreamV2;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

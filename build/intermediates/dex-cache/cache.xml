@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pre-dex-items>
+<items version="2" >
 
     <item
-        dex="C:\Users\Jacob Secor\.AndroidStudioBeta\Senior Design\MyApplication\mobile\build\intermediates\pre-dexed\debug\libstreaming-e88173a30a084c90213c30d425a8f8bc8face46a.jar"
-        jar="C:\Users\Jacob Secor\.AndroidStudioBeta\Senior Design\MyApplication\mobile\libs\libstreaming.jar"
+        jar="A:\Documents\!SENIOR DESIGN\New-App\mobile\libs\libstreaming.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="9a475c7ac0e30ba3ba230241cd72db1f959d242b"/>
+        sha1="9a475c7ac0e30ba3ba230241cd72db1f959d242b">
+        <dex dex="A:\Documents\!SENIOR DESIGN\New-App\mobile\build\intermediates\pre-dexed\debug\libstreaming-58344bec6b3b55ad418e37f69f9464297f93a6e1.jar" />
+    </item>
 
-</pre-dex-items>
+</items>

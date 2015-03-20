@@ -1,4 +1,4 @@
-package com.example.jacobsecor.myapplication;
+package com.example.jacobsecor.CameraStreamV2;
 
 import com.google.android.glass.media.Sounds;
 import com.google.android.glass.widget.CardBuilder;
