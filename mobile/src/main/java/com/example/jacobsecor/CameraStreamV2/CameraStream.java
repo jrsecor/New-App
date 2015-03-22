@@ -14,7 +14,7 @@ import android.widget.Button;
 import net.majorkernelpanic.streaming.gl.SurfaceView;
 
 import pcStream.*;
-public class MyActivity extends Activity {
+public class CameraStream extends Activity {
 
 
 
@@ -29,7 +29,7 @@ public class MyActivity extends Activity {
 
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
+                    .add(R.id.container, new StreamViewFragment())
                     .commit();
         }
     }
@@ -55,13 +55,13 @@ public class MyActivity extends Activity {
     }
 
     /**
-     * A placeholder fragment containing a simple view.
+     * This fragment contains our stream view.
      */
-    public static class PlaceholderFragment extends Fragment {
+    public static class StreamViewFragment extends Fragment {
         private Button doThingsButton;
         private PCStreamingServer pcServer;
         private SurfaceView mSurfaceView;
-        public PlaceholderFragment() {
+        public StreamViewFragment() {
         }
 
         @Override
@@ -80,11 +80,11 @@ public class MyActivity extends Activity {
                 pcServer.startPreview();
             }
 
-            doThingsButton = (Button) rootView.findViewById(R.id.doThings);
+            doThingsButton = (Button) rootView.findViewById(R.id.takePicButton);
             doThingsButton.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
-                    if(v.getId() == R.id.doThings ){
+                    if(v.getId() == R.id.takePicButton){
                         Log.i("TEST", "This should work");
                     }
                 }
